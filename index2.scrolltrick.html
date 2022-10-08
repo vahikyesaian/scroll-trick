@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .fp{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(25deg,rgb(5, 95, 5),rgb(132, 187, 21),rgb(8, 99, 8));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .fp>p{
+            width: 100%;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-transform: capitalize;
+            font-size: 20px;
+            margin: 10px 50px;
+
+        }
+        .fp>button{
+            width: 150px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: gainsboro;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-transform: capitalize;
+            transition: .4s;
+            
+        }
+        .fp>button:hover{
+            background-color: dimgray;
+            color: gainsboro;
+            border: none;
+        }
+        .box{
+            width: 50%;
+            /* height: 60%; */
+            border: 1px solid black;
+            background-color: darkkhaki;
+            border-radius: 35px;
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-end;
+            transform: scale(0)rotate(290deg);
+            transition: 1s;
+            
+        }
+        ::-webkit-scrollbar{
+            border-radius: 5px;
+        }
+        .square{
+            width: 100%;
+            height: 300px;
+            overflow-y: scroll;
+            padding: 40px;
+            /* border: 1px solid red; */
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        .square>span{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid black; */
+            font-size: 60px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;left: 0;
+            transform: rotate(45deg);
+            cursor: pointer;
+            transition: .4s;
+
+        }
+        .square>span:hover{
+            color: white;
+        }
+        .fp>section{
+            width: 10%;
+            height: 60px;
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: flex-start;
+            justify-content: flex-start;
+            position: absolute;
+            bottom: 170px;left: 390px;
+            transform: scale(0)rotate(290deg);
+            transition: 1s;
+        }
+        .fp>section>button{
+            width: 100px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-transform: capitalize;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .fp>section>input{
+            width: 20px;
+            height: 40px;
+            margin: 10px ;
+         
+        }
+    </style>
+</head>
+<body>
+    <div class="fp">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta aliquid quae harum fugit eius unde repellat ipsam animi consequuntur tempore, ad natus ipsa ipsum eaque quos obcaecati itaque consectetur cumque, veritatis, nam quisquam laboriosam! Corporis dolorum facere sed recusandae fugiat voluptatibus aut inventore deleniti deserunt, vel esse, quisquam officiis mollitia explicabo, nostrum odit nobis. Doloremque ipsa dignissimos explicabo, quae soluta deserunt in iusto tempore aperiam sint? Dolore aliquam odio dignissimos sit inventore enim quis quasi, possimus, accusamus quos, voluptatum numquam earum voluptates porro. Dolorem dicta iusto perferendis praesentium accusantium placeat beatae ex reprehenderit quis aut, cum excepturi quos, minus, ut odio autem. Iste repudiandae cupiditate a placeat nisi labore autem provident iusto blanditiis exercitationem nulla, enim corporis molestias accusantium architecto atque eaque! Voluptas adipisci dolorem possimus in fugit vero tempora. Temporibus similique, ducimus necessitatibus vitae incidunt praesentium dolore corrupti delectus, fuga, obcaecati mollitia porro a repellendus asperiores hic ex facilis reprehenderit eum quaerat! Reiciendis consequatur voluptas numquam magni ea, fugiat repellendus repudiandae eius ipsa, natus neque atque ut distinctio architecto accusantium quasi iure totam reprehenderit? Pariatur omnis vitae labore alias, ab ducimus iure unde in blanditiis error nobis autem quis vero repellendus distinctio sequi doloribus enim excepturi provident odit? Corporis commodi, in quisquam iusto, fuga minus animi dolores rerum explicabo nihil minima saepe accusantium voluptas, necessitatibus sequi esse perspiciatis id blanditiis. Ullam inventore quis atque sed ducimus dolor temporibus ipsa, id voluptate quae est ab modi corrupti voluptatem fugiat autem esse sequi nihil doloribus impedit. Pariatur doloribus magnam quos vel unde voluptatem neque accusantium beatae. Aspernatur magnam voluptatem odio non, repellat doloremque eligendi praesentium sequi inventore optio quidem fuga? Itaque nemo odit id inventore? Corporis optio nam reprehenderit odio ipsum eos est suscipit libero eum quidem ab enim quaerat sequi ex minima corrupti, dignissimos id nesciunt ut, voluptatibus non.</p>
+        <button>view</button>
+        <div class="box">
+            <div class="square">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, quam animi praesentium eaque magnam ad earum illo incidunt suscipit similique necessitatibus recusandae, facere tempore accusantium dignissimos corporis aliquam iste aut magni tenetur quo deserunt! Odio delectus voluptatem temporibus consectetur obcaecati doloremque aut dolorem fuga ipsa quas provident, blanditiis recusandae dolor ratione placeat nihil iure dolores nulla repellat error unde maiores autem eaque? Magni autem repellat recusandae consequuntur perferendis eum dolorum, adipisci numquam nostrum sequi, quibusdam voluptatibus sed veritatis doloribus voluptates explicabo ipsam maiores nisi suscipit praesentium earum nemo sunt illum neque! Laudantium quasi perferendis natus veritatis laboriosam ad placeat soluta, cupiditate, ut odio adipisci voluptates nemo. Earum corporis dolorum perferendis. Vitae laudantium rerum porro tempore maiores libero beatae itaque veritatis neque asperiores ab quidem cum error quia, quasi iure nesciunt temporibus mollitia accusantium laborum voluptas odio, explicabo vero. Voluptatum ipsam repudiandae necessitatibus culpa molestias iusto magni dolores ab, illum beatae iste qui incidunt accusantium optio recusandae provident vel a asperiores unde corporis officia. Omnis aut, at eligendi corrupti fugiat modi accusantium officia nemo. Illo quo reprehenderit nobis vitae, natus veniam earum quia quis aliquid nostrum laborum rerum sunt voluptatibus praesentium totam illum molestias dolores accusamus nulla eius id? Ea libero corporis eligendi rem impedit? Dolorum numquam incidunt quidem, facilis ex totam ratione recusandae quo, ipsa sunt ut eaque nam. Illo adipisci soluta perspiciatis nobis necessitatibus nam quibusdam maxime deleniti repellendus minus voluptates rerum, magnam hic aliquam voluptatibus? Ex est perferendis deserunt totam neque cum quos magnam eaque fuga. Exercitationem molestias temporibus, explicabo adipisci nemo perspiciatis et, animi a esse libero quasi tempore suscipit sequi odit. Sit quas dolores id commodi amet hic, quia, consectetur a, possimus aut repudiandae doloremque dolor omnis vitae doloribus aspernatur error dicta necessitatibus corrupti nihil assumenda cupiditate veniam! Quidem, exercitationem. Reprehenderit voluptatem cum doloremque, quo impedit esse! Possimus nulla veniam ad fugiat. Qui, alias optio consectetur assumenda error minima soluta deserunt inventore repellat consequatur quia eveniet totam velit atque modi et libero dicta amet magni, veritatis unde delectus tempore. Recusandae quidem cum quibusdam dignissimos labore! Fugit tempora quidem id, iusto ratione velit deleniti consequuntur quae doloribus eius incidunt pariatur voluptas deserunt eligendi ea, fuga qui dolore odit veniam! Nesciunt earum fuga iure est totam cumque ab culpa laboriosam commodi tempore officiis voluptas voluptatem dolorum cum nihil harum eligendi ratione, itaque atque omnis modi! Ipsam, officiis corporis dolor ea eveniet ut id, illo, delectus similique quasi sequi assumenda deserunt quibusdam sapiente necessitatibus. Nostrum odio dolorem aut similique, delectus suscipit ex fugiat quod. Voluptates amet quos consectetur unde. Ab, doloremque repellat, magni minima incidunt et, ea ratione nostrum minus quaerat consectetur. Magni in placeat labore minima explicabo, dolorem velit numquam atque exercitationem eaque sapiente corporis animi similique quaerat dolorum, nulla voluptatibus vitae ea suscipit. Nemo voluptate, incidunt delectus soluta quod placeat aut id dolorum aspernatur esse est dolor. Facilis aliquam enim accusamus temporibus tenetur et vitae dolorum possimus nihil porro nostrum a harum, reprehenderit explicabo consequatur! Perspiciatis quisquam nobis aperiam porro quia, corrupti quo similique accusamus iste aspernatur?</p>
+                <span id="spn">+</span>
+            </div>
+            
+        </div>
+        <section id="sec">
+            <input type="checkbox" id="inp" disabled>
+            <button id="btn" disabled>accept</button>
+        </section>
+
+    </div>
+</body>
+<script>
+    alert('please click the button below to show the conditions')
+    let _box
+    let _sec
+    let _p =document.querySelector('.square>p')
+    let _h =(_p.clientHeight)-500
+    document.getElementsByTagName('button')[0].addEventListener('click',function(){
+         _box = document.getElementsByClassName('box')[0]
+         _sec = document.getElementById('sec')
+        _box.style.transform='scale(1)rotate(0)'
+        _sec.style.transform='scale(1)rotate(0)'
+        
+    })
+    document.getElementById('spn').addEventListener('click',()=>{
+        _box.style.transform='scale(0)rotate(-290deg)'
+        _box.style.border='none'
+        _sec.style.transform='scale(0)rotate(-290deg)'
+    })
+    document.getElementsByClassName('square')[0].addEventListener('scroll',function(){
+       _st = this.scrollTop
+    //   console.log(_h+ ' - '+parseInt(_st))
+    if(_st >= _h){
+        document.querySelector('#sec>input').removeAttribute('disabled')
+    }
+    })
+    document.querySelector('#sec>input').addEventListener('click',function(){
+        if(this.checked){
+            this.nextElementSibling.removeAttribute('disabled')
+        }else{
+            this.nextElementSibling.setAttribute('disabled','disabled')
+
+        }
+    })
+    document.getElementById('btn').addEventListener('click',function(){
+        confirm('Are you sure?')
+    })
+
+
+</script>
+</html>
